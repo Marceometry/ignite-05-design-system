@@ -1,5 +1,9 @@
-import { colors } from '@ignite-marceometry/tokens'
+import { styled } from '@/styles'
+
+const Heading = styled('h1', {
+  color: '$ignite300',
+})
 
 export function App() {
-  return <h1 style={{ color: colors.ignite300 }}>Hello World</h1>
+  return <Heading>Hello World</Heading>
 }
