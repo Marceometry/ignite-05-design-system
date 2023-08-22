@@ -7,12 +7,14 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts",
-    "dev": "tsup src/index.ts --format esm,cjs --dts --watch"
+    "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
+    "lint": "eslint src/**/*.ts* --fix"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
     "@ignite-marceometry/ts-config": "*",
+    "@ignite-marceometry/eslint-config": "*",
     "tsup": "^7.2.0",
     "typescript": "^5.1.6"
   }
