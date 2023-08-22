@@ -1,0 +1,4 @@
+{
+  "extends": "@ignite-marceometry/ts-config/react.json",
+  "include": ["src"]
+}
