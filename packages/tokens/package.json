@@ -1,5 +1,5 @@
 {
-  "name": "@ignite-marceometry/tokens",
+  "name": "@ignite-ui/tokens",
   "version": "1.0.0",
   "description": "",
   "main": "./dist/index.js",
@@ -13,8 +13,8 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@ignite-marceometry/ts-config": "*",
-    "@ignite-marceometry/eslint-config": "*",
+    "@ignite-ui/ts-config": "*",
+    "@ignite-ui/eslint-config": "*",
     "tsup": "^7.2.0",
     "typescript": "^5.1.6"
   }

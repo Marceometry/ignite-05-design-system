@@ -1,5 +1,5 @@
 {
-  "name": "@ignite-marceometry/docs",
+  "name": "@ignite-ui/docs",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -29,7 +29,10 @@
     "vite": "^4.4.9"
   },
   "dependencies": {
-    "@ignite-marceometry/react": "^1.0.0",
-    "@ignite-marceometry/eslint-config": "^1.0.0"
+    "@ignite-ui/eslint-config": "^1.0.0",
+    "@ignite-ui/react": "^1.0.0",
+    "@ignite-ui/tokens": "^1.0.0",
+    "@ignite-ui/ts-config": "^1.0.0",
+    "polished": "^4.2.2"
   }
 }
