@@ -2,11 +2,31 @@ import { ComponentProps, ElementType } from 'react'
 import { styled } from '@/styles'
 
 export const Button = styled('button', {
-  fontFamily: '$default',
+  all: 'unset',
   borderRadius: '$sm',
-  fontWeight: '$bold',
-  padding: '$2 $4',
-  border: 0,
+  fontSize: '$sm',
+  fontFamily: '$default',
+  textAlign: 'center',
+  cursor: 'pointer',
+
+  transitionProperty: 'border, color, background-color',
+  transitionDuration: '0.2s',
+  backgroundColor: 'transparent',
+  border: '1px solid transparent',
+
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  gap: '$2',
+
+  svg: {
+    width: '$4',
+    height: '$4',
+  },
+
+  '&:disabled': {
+    cursor: 'not-allowed',
+  },
 
   variants: {
     variant: {
@@ -14,17 +34,58 @@ export const Button = styled('button', {
         backgroundColor: '$ignite500',
         border: '1px solid $ignite500',
         color: '$white',
+
+        '&:not(:disabled):hover': {
+          backgroundColor: '$ignite300',
+        },
+
+        '&:disabled': {
+          borderColor: '$gray200',
+          backgroundColor: '$gray200',
+        },
       },
       secondary: {
-        backgroundColor: 'transparent',
         border: '1px solid $ignite500',
         color: '$ignite500',
+
+        '&:not(:disabled):hover': {
+          backgroundColor: '$ignite500',
+          color: '$white',
+        },
+
+        '&:disabled': {
+          color: '$gray200',
+          borderColor: '$gray200',
+        },
+      },
+      tertiary: {
+        color: '$gray100',
+
+        '&:not(:disabled):hover': {
+          color: '$white',
+        },
+
+        '&:disabled': {
+          color: '$gray600',
+        },
+      },
+    },
+
+    size: {
+      sm: {
+        minWidth: 100,
+        padding: '$1 $2',
+      },
+      md: {
+        minWidth: 120,
+        padding: '$2 $4',
       },
     },
   },
 
   defaultVariants: {
     variant: 'primary',
+    size: 'md',
   },
 })
 
