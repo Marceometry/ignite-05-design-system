@@ -14,6 +14,7 @@ export const Button = styled('button', {
   backgroundColor: 'transparent',
   border: '1px solid transparent',
 
+  boxSizing: 'border-box',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',

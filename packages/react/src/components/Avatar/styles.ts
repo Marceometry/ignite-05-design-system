@@ -7,6 +7,7 @@ export const AvatarContainer = styled(Avatar.Root, {
   width: '$12',
   height: '$12',
   overflow: 'hidden',
+  boxSizing: 'border-box',
 })
 
 export const AvatarImage = styled(Avatar.Image, {
