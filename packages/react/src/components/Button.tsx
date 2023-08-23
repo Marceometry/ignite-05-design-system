@@ -1,5 +1,5 @@
+import { ComponentProps, ElementType } from 'react'
 import { styled } from '@/styles'
-import { ComponentProps } from 'react'
 
 export const Button = styled('button', {
   fontFamily: '$default',
@@ -28,4 +28,6 @@ export const Button = styled('button', {
   },
 })
 
-export type ButtonProps = ComponentProps<typeof Button>
+export interface ButtonProps extends ComponentProps<typeof Button> {
+  as?: ElementType
+}
