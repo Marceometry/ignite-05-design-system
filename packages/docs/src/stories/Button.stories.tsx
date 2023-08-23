@@ -7,6 +7,18 @@ export default {
   component: Button,
   args: {
     children: 'Enviar',
+    variant: 'primary',
+    size: 'md',
+  },
+  argTypes: {
+    variant: {
+      options: ['primary', 'secondary', 'tertiary'],
+      control: { type: 'inline-radio' },
+    },
+    size: {
+      options: ['md', 'sm'],
+      control: { type: 'inline-radio' },
+    },
   },
 } as Meta<ButtonProps>
 
