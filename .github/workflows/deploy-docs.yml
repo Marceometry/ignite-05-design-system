@@ -20,6 +20,9 @@ jobs:
       - run: npm ci
 
       - run: npm run build
+        env:
+          TURBO_TOKEN: PVmG4lmW141hmCd7hseFvzCI
+          TURBO_TEAM: marceometry
 
       - name: Deploy Storybook
         working-directory: ./packages/docs
