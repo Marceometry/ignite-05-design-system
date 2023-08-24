@@ -1,5 +1,5 @@
 {
-  "name": "@ignite-ui/docs",
+  "name": "@marceometry-ignite-ui/docs",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -31,10 +31,10 @@
     "vite": "^4.4.9"
   },
   "dependencies": {
-    "@ignite-ui/eslint-config": "^1.0.0",
-    "@ignite-ui/react": "^1.0.0",
-    "@ignite-ui/tokens": "^1.0.0",
-    "@ignite-ui/ts-config": "^1.0.0",
+    "@marceometry-ignite-ui/eslint-config": "^1.0.0",
+    "@marceometry-ignite-ui/react": "^1.0.0",
+    "@marceometry-ignite-ui/tokens": "^1.0.0",
+    "@marceometry-ignite-ui/ts-config": "^1.0.0",
     "@storybook/addon-a11y": "^7.3.2",
     "phosphor-react": "^1.4.1",
     "polished": "^4.2.2"
