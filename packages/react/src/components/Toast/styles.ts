@@ -19,17 +19,17 @@ export const ToastViewport = styled(Toast.Viewport, {
   gap: 10,
 })
 
-export const hide = keyframes({
+const hide = keyframes({
   '0%': { opacity: 1 },
   '100%': { opacity: 0 },
 })
 
-export const slideIn = keyframes({
+const slideIn = keyframes({
   from: { transform: `translateX(calc(100% + ${VIEWPORT_PADDING}px))` },
   to: { transform: 'translateX(0)' },
 })
 
-export const swipeOut = keyframes({
+const swipeOut = keyframes({
   from: { transform: 'translateX(var(--radix-toast-swipe-end-x))' },
   to: { transform: `translateX(calc(100% + ${VIEWPORT_PADDING}px))` },
 })
@@ -43,7 +43,7 @@ export const ToastRoot = styled(Toast.Root, {
   fontFamily: '$default',
   backgroundColor: '$gray800',
   border: '1px solid $gray600',
-  borderRadius: 6,
+  borderRadius: '$sm',
   boxShadow:
     'hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px',
 
@@ -76,7 +76,7 @@ export const ToastDescription = styled(Toast.Description, {
   color: '$gray200',
 })
 
-export const ToastAction = styled(Toast.Action, {
+export const ToastClose = styled(Toast.Close, {
   all: 'unset',
   height: 'fit-content',
   color: '$gray200',

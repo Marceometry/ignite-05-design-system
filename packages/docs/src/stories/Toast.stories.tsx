@@ -3,7 +3,7 @@ import type { StoryObj, Meta } from '@storybook/react'
 import { Box, Button, Toast, ToastProps } from '@marceometry-ignite-ui/react'
 
 export default {
-  title: 'Form/Toast',
+  title: 'Data display/Toast',
   component: Toast,
   decorators: [
     (Story) => {
