@@ -9,7 +9,7 @@ export const Button = styled('button', {
   textAlign: 'center',
   cursor: 'pointer',
 
-  transitionProperty: 'border, color, background-color',
+  transitionProperty: 'border, box-shadow, color, background-color',
   transitionDuration: '0.2s',
   backgroundColor: 'transparent',
   border: '1px solid transparent',
@@ -23,6 +23,10 @@ export const Button = styled('button', {
   svg: {
     width: '$4',
     height: '$4',
+  },
+
+  '&:focus': {
+    boxShadow: '0 0 0 2px $colors$gray100'
   },
 
   '&:disabled': {

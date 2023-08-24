@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@marceometry-ignite-ui/eslint-config": "^1.0.0",
-    "@marceometry-ignite-ui/react": "^1.0.0",
+    "@marceometry-ignite-ui/react": "^1.0.1",
     "@marceometry-ignite-ui/tokens": "^1.0.1",
     "@marceometry-ignite-ui/ts-config": "^1.0.0",
     "@storybook/addon-a11y": "^7.3.2",
